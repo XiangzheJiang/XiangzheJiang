@@ -1,38 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XiangzheJiang</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        .container {
-            text-align: center;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jiangxiangzhe </title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      padding: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 2rem;
+    }
+    .section h2 {
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .info p {
+      margin: 0.3rem 0;
+    }
+    .job, .edu {
+      margin-bottom: 1rem;
+    }
+    .job h3, .edu h3 {
+      margin-bottom: 0.2rem;
+    }
+    .job span, .edu span {
+      color: #999;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (max-width: 600px) {
+      .info {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>XiangzheJiang</h1>
-        <p>Hi there 👋</p>
-        <p>Welcome to my personal website.</p>
-        <p>NKU Student.</p>
+  <div class="container">
+    <h1>jiangxiangzhe</h1>
+    <div class="info">
+      <p>📧 jiangxiangzhe@mail.nankai.edu.cn</p >
     </div>
+
+  
+
+    <div class="section">
+      <h2>技能</h2>
+      <ul>
+        <li>编程语言：Python, JavaScript, C++</li>
+        <li>前端技术：HTML, CSS, React, Vue</li>
+        <li>后端开发：Flask, Django, Node.js</li>
+        <li>工具与平台：Git, Docker, Linux, GitHub Actions</li>
+      </ul>
+    </div>
+
+
+
+    <div class="section">
+      <h2>教育背景</h2>
+      <div class="edu">
+        <h3>计算机科学与技术 本科 - 南开大学</h3>
+        <span>2020年 - 2024年</span>
+        <p>主修课程：数据结构、操作系统、人工智能、软件工程</p >
+      </div>
+    </div>
+
+
+    <div class="section">
+      <h2>语言能力</h2>
+      <p>中文（母语），英文（CET-6，能熟练阅读技术文档）</p >
+    </div>
+  </div>
 </body>
 </html>
